@@ -1,0 +1,13 @@
+.image{
+	height:auto;
+	min-height:100vh;
+	background-image:url(WeatherBackground.png);
+	background-size:cover;
+	background-position:center;
+  background-attachment:fixed;}
+
+.table1{
+  width: 300px;
+ padding: 25px;
+}
+ 

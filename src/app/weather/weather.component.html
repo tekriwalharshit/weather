@@ -1,0 +1,26 @@
+<div class="image">
+<input type="text" name="" value="" placeholder="city name " #cityName>
+<button type="button" name="button" (click)="this.getWeather(cityName.value)">
+ Search
+  </button>
+<div class="table1">
+  <div class="currentCity" >
+    <table border="5">
+      <tr *ngIf="this.currentCityWeather !== undefined">
+        <td>{{this.currentCityWeather.cityName}}</td>
+        <td *ngFor="let v of this.currentCityWeather.values">{{v}}</td>
+      </tr>
+      </table>
+      </div>
+      </div>
+
+      <div class="pastSearches ">
+        Past Searches
+        <table border="5">
+          <tr *ngFor="let pastCity of this.pastCityWeather">
+            <td>{{pastCity.cityName}}</td>
+            <td>{{pastCity.searchTime}}</td>
+            <td *ngFor="let v of pastCity.values">{{v}}</td>
+          </tr>
+        </table>
+      </div>
